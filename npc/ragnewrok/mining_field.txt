@@ -1,0 +1,57 @@
+prontera,149,176,5	script	Mining Field	4_M_EINMINER,{
+	mes "[Mining Field]";
+	mes "This is the entrance to the ^FF0000Mining Field^000000.";
+	next;
+
+	mes "[Mining Field]";
+	next;
+
+	switch(select("Enter:Information")) {
+		//--------------------------------------
+		// Enter
+		//--------------------------------------
+		case 1:
+			mes "[Mining Field]";
+			mes "Good luck!";
+			close2;
+			warp "bl_depth2", 0, 0;
+			end;
+
+		//--------------------------------------
+		// Information
+		//--------------------------------------
+		case 2:
+			mes "[Mining Field]";
+			mes "Good luck!";
+			close2;
+			end;
+	}
+	end;
+}
+
+// Warp Portals
+//============================================================
+bl_depth2,141,137,0	warp	leave	1,1,prontera,155,180
+
+//----------------------------------------------------------------------------
+// Monsters
+//----------------------------------------------------------------------------
+bl_depth2, 0, 0	monster	Abyssman	31076, 20, 1000
+bl_depth2, 0, 0	monster	Purple Mineral	31077, 20, 1000
+bl_depth2, 0, 0	monster	White Mineral	31078, 20, 1000
+bl_depth2, 0, 0	monster	Red Mineral	31079, 20, 1000
+bl_depth2, 0, 0	monster	Green Mineral	31080, 20, 1000
+
+//----------------------------------------------------------------------------
+// Mapflag
+//----------------------------------------------------------------------------
+bl_depth2	mapflag	nosave	SavePoint
+bl_depth2	mapflag	nowarp
+bl_depth2	mapflag	nowarpto
+bl_depth2	mapflag	nomemo
+bl_depth2	mapflag	nopenalty
+bl_depth2	mapflag	nobranch
+bl_depth2	mapflag	noicewall
+bl_depth2	mapflag	norenewalexppenalty
+bl_depth2	mapflag	norenewaldroppenalty
+bl_depth2	mapflag	pvp

@@ -1,0 +1,12 @@
+-	script	GlobalDrop	-1,{
+
+OnNPCKillEvent:
+
+	set .@Ragnewrok_Coin, 1230001;
+	set .@Ragnewrok_Coin_chance, 500;    // chance (500 = 5.00%)
+
+	if (rand(10000) < .@Ragnewrok_Coin_chance)
+		getitem .@Ragnewrok_Coin, 1;
+
+	end;
+}

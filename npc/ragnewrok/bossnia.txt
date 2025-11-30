@@ -1,0 +1,409 @@
+prontera,149,179,5	script	Bossnia	645,{
+
+	// ---------------------------------------------------------
+	// REQUISITO GLOBAL
+	// ---------------------------------------------------------
+	if (BaseLevel < 200) {
+		mes "[Bossnia]";
+		mes "Only players Level ^FF0000200+^000000 may enter.";
+		close;
+	}
+
+MainMenu:
+	// ---------------------------------------------------------
+	// DIÁLOGO
+	// ---------------------------------------------------------
+	mes "[Bossnia]";
+	mes "This is the entrance to the ^FF0000Bossnia Turn-In^000000.";
+	mes "If you fail or die, the door will close.";
+	next;
+
+	mes "[Bossnia]";
+	mes "Choose your course.";
+	next;
+
+	// ---------------------------------------------------------
+	// MENU
+	// ---------------------------------------------------------
+	switch(select("Easy:Medium:Hard:Extreme:Information")) {
+
+		// -----------------------------------------------------
+		// EASY
+		// -----------------------------------------------------
+		case 1:
+			mes "[Bossnia]";
+			mes "Easy Mode:";
+			mes "- Monsters take ^FF000010% damage^000000";
+			mes "- Stats are increased by approximately ^FF00002x^000000.";
+			next;
+
+			switch(select("Enter Room:Return to Main Menu")) {
+				case 1:
+					close2;
+					warp "niflxmas",0,0;
+					end;
+				case 2:
+					goto MainMenu;
+			}
+			end;
+
+		// -----------------------------------------------------
+		// MEDIUM
+		// -----------------------------------------------------
+		case 2:
+			mes "[Bossnia]";
+			mes "Medium Mode:";
+			mes "- Monsters take ^FF000010% damage^000000.";
+			mes "- Stats are increased by around ^FF00005x^000000 compared to original MVPs.";
+			next;
+
+			switch(select("Enter Room:Return to Main Menu")) {
+				case 1:
+					close2;
+					warp "jor_sanct",0,0;
+					end;
+				case 2:
+					goto MainMenu;
+			}
+			end;
+
+		// -----------------------------------------------------
+		// HARD
+		// -----------------------------------------------------
+		case 3:
+			mes "[Bossnia]";
+			mes "Hard Mode:";
+			mes "- Monsters take ^FF00005% damage^000000 (DamageTaken = 5).";
+			mes "- HP remains increased by about ^FF00005x^000000 compared to original MVPs.";
+			mes "- All MVPs use ^FF0000Max Pain Lv 5^000000.";
+			next;
+
+			switch(select("Enter Room:Return to Main Menu")) {
+				case 1:
+					close2;
+					warp "jor_back5",0,0;
+					end;
+				case 2:
+					goto MainMenu;
+			}
+			end;
+
+		// -----------------------------------------------------
+		// EXTREME
+		// -----------------------------------------------------
+		case 4:
+			mes "[Bossnia]";
+			mes "Extreme Mode:";
+			mes "- Monsters take only ^FF00001% damage^000000.";
+			next;
+
+			switch(select("Enter Room:Return to Main Menu")) {
+				case 1:
+					close2;
+					warp "ra_pol01",0,0;
+					end;
+				case 2:
+					goto MainMenu;
+			}
+			end;
+
+		// -----------------------------------------------------
+		// INFORMATION
+		// -----------------------------------------------------
+		case 5:
+		InfoLoop:
+			mes "[Bossnia]";
+			mes "Let me explain each difficulty level and the monsters inside:";
+			next;
+
+			// EASY
+			mes "[Bossnia - Easy]";
+			mes "- Monsters take ^FF000010% damage^000000.";
+			mes "- Their stats are increased by about ^FF00002x^000000.";
+			mes "Monsters in this room (each spawns x3):";
+			mes "- Dracula";
+			mes "- Drake";
+			mes "- Turtle General";
+			mes "- Maya";
+			mes "- Evil Snake Lord";
+			mes "- Pharaoh";
+			mes "- Phreeoni";
+			mes "- Garm";
+			mes "- Eddga";
+			mes "- Moonlight Flower";
+			mes "- Mistress";
+			mes "- Stormy Knight";
+			mes "- Lady Tanee";
+			mes "- Incantation Samurai";
+			mes "- Tao Gunka";
+			mes "- Orc Hero";
+			mes "- Bacsojin";
+			mes "- King Poring";
+			mes "- Boitata";
+			mes "- Gopinich";
+			mes "- Osiris";
+			mes "- Golden Thief Bug";
+			mes "- Fenrir";
+			next;
+
+			// MEDIUM
+			mes "[Bossnia - Medium]";
+			mes "- Monsters take ^FF000010% damage^000000.";
+			mes "- Their stats are increased by about ^FF00005x^000000.";
+			mes "Monsters in this room (each spawns x3):";
+			mes "- Egnigem Cenia (Ygnizem)";
+			mes "- Orc Lord";
+			mes "- Lord of the Dead";
+			mes "- Vesper";
+			mes "- Baphomet";
+			mes "- Dark Lord";
+			mes "- RSX-0806";
+			mes "- Giant Octopus";
+			mes "- Amon Ra";
+			mes "- Detardeurus";
+			next;
+
+			// HARD
+			mes "[Bossnia - Hard]";
+			mes "- Monsters take ^FF00005% damage^000000.";
+			mes "- Their HP is about ^FF00005x^000000 the original MVP HP.";
+			mes "- All MVPs use ^FF0000Max Pain Lv 5^000000.";
+			mes "Monsters in this room (each spawns x5):";
+			mes "- Atroce";
+			mes "- Celine Kimi";
+			mes "- Fallen Bishop";
+			mes "- Kiel D-01";
+			mes "- Gloom Under Night";
+			mes "- Burning Fang";
+			mes "- Lich Lord";
+			mes "- Awakened Ferre (Grand Pere)";
+			mes "- Thanatos Phantom";
+			mes "- Rigid Muspellskoll";
+			mes "- Amdarais";
+			next;
+
+			// EXTREME
+			mes "[Bossnia - Extreme]";
+			mes "- Monsters take only ^FF00001% damage^000000.";
+			mes "Fixed MVPs in this room (each spawns x3):";
+			mes "- Beelzebub";
+			mes "- Kraken";
+			mes "- Ktullanux";
+			mes "- Scaraba Queen";
+			mes "- Ifrit";
+			mes "- Valkyrie";
+			mes "- Faceworm Queen";
+			mes "- God Morroc";
+			mes "- Freyja";
+			mes "- Naght Sieger";
+			mes "- Gioia";
+			next;
+
+			mes "[Bossnia - Extreme (Random Spawners)]";
+			mes "And one additional random MVP from Biolab 3, 4 and 5.";
+			next;
+
+			switch(select("Return to Main Menu:Close")) {
+				case 1: goto MainMenu;
+				case 2: close;
+			}
+	}
+	end;
+}
+
+
+// Warp Portals
+//============================================================
+niflxmas,19,154,0	warp	leave0101	1,1,prontera,155,180
+
+jor_sanct,148,42,0	warp	leave0201	1,1,prontera,155,180
+jor_sanct,259,116,0	warp	random0201	1,1,jor_sanct,0,0
+jor_sanct,215,84,0	warp	random0202	1,1,jor_sanct,0,0
+jor_sanct,265,157,0	warp	random0203	1,1,jor_sanct,0,0
+jor_sanct,238,189,0	warp	random0204	1,1,jor_sanct,0,0
+jor_sanct,50,73,0	warp	random0205	1,1,jor_sanct,0,0
+jor_sanct,82,280,0	warp	random0206	1,1,jor_sanct,0,0
+jor_sanct,28,290,0	warp	random0207	1,1,jor_sanct,0,0
+jor_sanct,149,283,0	warp	random0208	1,1,jor_sanct,0,0
+
+jor_back5,17,239,0	warp	leave0301	1,1,prontera,155,180
+jor_back5,338,28,0	warp	leave0302	1,1,prontera,155,180
+jor_back5,159,356,0	warp	random0301	1,1,jor_back5,0,0
+jor_back5,356,346,0	warp	random0302	1,1,jor_back5,0,0
+jor_back5,239,294,0	warp	random0303	1,1,jor_back5,0,0
+jor_back5,281,210,0	warp	random0304	1,1,jor_back5,0,0
+jor_back5,56,30,0	warp	random0305	1,1,jor_back5,0,0
+jor_back5,39,90,0	warp	random0306	1,1,jor_back5,0,0
+jor_back5,218,82,0	warp	random0307	1,1,jor_back5,0,0
+
+ra_pol01,296,102,0	warp	leave0401	1,1,prontera,155,180
+ra_pol01,320,223,0	warp	random0401	1,1,ra_pol01,0,0
+ra_pol01,24,331,0	warp	random0402	1,1,ra_pol01,0,0
+ra_pol01,35,243,0	warp	random0403	1,1,ra_pol01,0,0
+ra_pol01,67,40,0	warp	random0404	1,1,ra_pol01,0,0
+ra_pol01,159,90,0	warp	random0405	1,1,ra_pol01,0,0
+ra_pol01,365,356,0	warp	random0406	1,1,ra_pol01,0,0
+
+
+//----------------------------------------------------------------------------
+// Room Easy
+//----------------------------------------------------------------------------
+niflxmas,0,0	monster	[Bossnia] Dracula	        31001,3,1000
+niflxmas,0,0	monster	[Bossnia] Drake	        31002,3,1000
+niflxmas,0,0	monster	[Bossnia] Turtle General	31003,3,1000
+niflxmas,0,0	monster	[Bossnia] Maya	        31004,3,1000
+niflxmas,0,0	monster	[Bossnia] Evil Snake Lord	31005,3,1000
+niflxmas,0,0	monster	[Bossnia] Pharaoh	        31006,3,1000
+niflxmas,0,0	monster	[Bossnia] Phreeoni	        31007,3,1000
+niflxmas,0,0	monster	[Bossnia] Garm	        31008,3,1000
+niflxmas,0,0	monster	[Bossnia] Eddga	        31009,3,1000
+niflxmas,0,0	monster	[Bossnia] Moonlight	        31010,3,1000
+niflxmas,0,0	monster	[Bossnia] Mistress	        31011,3,1000
+niflxmas,0,0	monster	[Bossnia] Stormy Knight	31012,3,1000
+niflxmas,0,0	monster	[Bossnia] Lady Tanee	        31013,3,1000
+niflxmas,0,0	monster	[Bossnia] Incantation Samurai	31014,3,1000
+niflxmas,0,0	monster	[Bossnia] Tao Gunka	        31015,3,1000
+niflxmas,0,0	monster	[Bossnia] Orc Hero	        31016,3,1000
+niflxmas,0,0	monster	[Bossnia] Bacsojin	        31017,3,1000
+niflxmas,0,0	monster	[Bossnia] King Poring	        31018,3,1000
+niflxmas,0,0	monster	[Bossnia] Boitata	        31019,3,1000
+niflxmas,0,0	monster	[Bossnia] Gopinich	        31020,3,1000
+niflxmas,0,0	monster	[Bossnia] Osiris	        31021,3,1000
+niflxmas,0,0	monster	[Bossnia] Golden Thief Bug	31022,3,1000
+niflxmas,0,0	monster	[Bossnia] Fenrir	        31023,3,1000
+
+//----------------------------------------------------------------------------
+// Room Medium
+//----------------------------------------------------------------------------
+jor_sanct,0,0	monster	[Bossnia] Ygnizem	        31024,3,1000
+jor_sanct,0,0	monster	[Bossnia] Orc Lord	        31025,3,1000
+jor_sanct,0,0	monster	[Bossnia] Death Lord	        31026,3,1000
+jor_sanct,0,0	monster	[Bossnia] Vesper	        31027,3,1000
+jor_sanct,0,0	monster	[Bossnia] Baphomet	        31028,3,1000
+jor_sanct,0,0	monster	[Bossnia] Dark Lord	        31029,3,1000
+jor_sanct,0,0	monster	[Bossnia] RSX 0806	        31030,3,1000
+jor_sanct,0,0	monster	[Bossnia] Gigant Octopus	        31031,3,1000
+jor_sanct,0,0	monster	[Bossnia] Amon Ra	        31032,3,1000
+jor_sanct,0,0	monster	[Bossnia] Detardeurus	        31033,3,1000
+
+//----------------------------------------------------------------------------
+// Room Hard
+//----------------------------------------------------------------------------
+jor_back5,0,0	monster	[Bossnia] Atroce	        31034,5,1000
+jor_back5,0,0	monster	[Bossnia] Celine Kimi	        31035,5,1000
+jor_back5,0,0	monster	[Bossnia] Fallen Bishop	        31036,5,1000
+jor_back5,0,0	monster	[Bossnia] Kiel D-01	        31037,5,1000
+jor_back5,0,0	monster	[Bossnia] Gloom Under Night	31038,5,1000
+jor_back5,0,0	monster	[Bossnia] Burning Fang	        31039,5,1000
+jor_back5,0,0	monster	[Bossnia] Lich Lord	        31040,5,1000
+jor_back5,0,0	monster	[Bossnia] Grand Pere	        31041,5,1000
+jor_back5,0,0	monster	[Bossnia] Thanatos	        31042,5,1000
+jor_back5,0,0	monster	[Bossnia] Muspellskoll	        31043,5,1000
+jor_back5,0,0	monster	[Bossnia] Amdarias	        31044,5,1000
+
+//----------------------------------------------------------------------------
+// Room Extreme
+//----------------------------------------------------------------------------
+ra_pol01,0,0	monster	[Bossnia] Beelzebub	        31045,3,1000
+ra_pol01,0,0	monster	[Bossnia] Kraken	        31046,3,1000
+ra_pol01,0,0	monster	[Bossnia] Ktullanux	        31047,3,1000
+ra_pol01,0,0	monster	[Bossnia] Scaraba	        31048,3,1000
+ra_pol01,0,0	monster	[Bossnia] Ifrit	        31049,3,1000
+ra_pol01,0,0	monster	[Bossnia] Valkyrie	        31050,3,1000
+ra_pol01,0,0	monster	[Bossnia] Faceworm	        31051,3,1000
+ra_pol01,0,0	monster	[Bossnia] God Morroc	        31052,3,1000
+ra_pol01,0,0	monster	[Bossnia] Freyja	        31053,3,1000
+ra_pol01,0,0	monster	[Bossnia] Naght Sieger	        31054,3,1000
+ra_pol01,0,0	monster	[Bossnia] Gioia	        31055,3,1000
+
+ra_pol01,0,0,0	script	Bio3Spawner	-1,{
+	OnInit:
+		setarray .mob_list[0], 31056, 31057, 31058, 31059, 31060, 31061;
+		donpcevent strnpcinfo(3)+"::OnRespawn";
+		end;
+	OnRespawn:
+		.@mob_id = .mob_list[rand(getarraysize(.mob_list))];
+		.@name$ = "[Bossnia] " + getmonsterinfo(.@mob_id, MOB_NAME);
+		monster "ra_pol01", 0, 0, .@name$, .@mob_id, 1, strnpcinfo(3)+"::OnMobDeath";
+		end;
+	OnMobDeath:
+		donpcevent strnpcinfo(3)+"::OnRespawn";
+		end;
+}
+
+ra_pol01,0,0,0	script	Bio4Spawner	-1,{
+	OnInit:
+		setarray .mob_list[0], 31062, 31063, 31064, 31065, 31066, 31067, 31068;
+		donpcevent strnpcinfo(3)+"::OnRespawn";
+		end;
+	OnRespawn:
+		.@mob_id = .mob_list[rand(getarraysize(.mob_list))];
+		.@name$ = "[Bossnia] " + getmonsterinfo(.@mob_id, MOB_NAME);
+		monster "ra_pol01", 0, 0, .@name$, .@mob_id, 1, strnpcinfo(3)+"::OnMobDeath";
+		end;
+	OnMobDeath:
+		donpcevent strnpcinfo(3)+"::OnRespawn";
+		end;
+}
+
+ra_pol01,0,0,0	script	Bio5Spawner	-1,{
+	OnInit:
+		setarray .mob_list[0], 31069, 31070, 31071, 31072, 31073, 31074, 31075;
+		donpcevent strnpcinfo(3)+"::OnRespawn";
+		end;
+	OnRespawn:
+		.@mob_id = .mob_list[rand(getarraysize(.mob_list))];
+		.@name$ = "[Bossnia] " + getmonsterinfo(.@mob_id, MOB_NAME);
+		monster "ra_pol01", 194, 138, .@name$, .@mob_id, 1, strnpcinfo(3)+"::OnMobDeath";
+		end;
+	OnMobDeath:
+		donpcevent strnpcinfo(3)+"::OnRespawn";
+		end;
+}
+
+//----------------------------------------------------------------------------
+// Mapflags
+//----------------------------------------------------------------------------
+niflxmas	mapflag	nowarp
+niflxmas	mapflag	nomemo
+niflxmas	mapflag	noteleport
+niflxmas	mapflag	nosave
+niflxmas	mapflag	nobranch
+niflxmas	mapflag	nowarpto
+niflxmas	mapflag	noicewall
+niflxmas	mapflag	norenewalexppenalty
+niflxmas	mapflag	norenewaldroppenalty
+niflxmas	mapflag	invincible_time	10000
+
+jor_sanct	mapflag	nowarp
+jor_sanct	mapflag	nomemo
+jor_sanct	mapflag	noteleport
+jor_sanct	mapflag	nosave
+jor_sanct	mapflag	nobranch
+jor_sanct	mapflag	nowarpto
+jor_sanct	mapflag	noicewall
+jor_sanct	mapflag	norenewalexppenalty
+jor_sanct	mapflag	norenewaldroppenalty
+jor_sanct	mapflag	invincible_time	10000
+
+jor_back5	mapflag	nowarp
+jor_back5	mapflag	nomemo
+jor_back5	mapflag	noteleport
+jor_back5	mapflag	nosave
+jor_back5	mapflag	nobranch
+jor_back5	mapflag	nowarpto
+jor_back5	mapflag	noicewall
+jor_back5	mapflag	norenewalexppenalty
+jor_back5	mapflag	norenewaldroppenalty
+jor_back5	mapflag	invincible_time	10000
+
+ra_pol01	mapflag	nowarp
+ra_pol01	mapflag	nomemo
+ra_pol01	mapflag	noteleport
+ra_pol01	mapflag	nosave
+ra_pol01	mapflag	nobranch
+ra_pol01	mapflag	nowarpto
+ra_pol01	mapflag	noicewall
+ra_pol01	mapflag	norenewalexppenalty
+ra_pol01	mapflag	norenewaldroppenalty
+ra_pol01	mapflag	invincible_time	10000

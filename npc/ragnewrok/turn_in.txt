@@ -1,0 +1,92 @@
+prontera,149,182,5	script	Turn-In Room	644,{
+	mes "[Turn-In Room]";
+	mes "This is the entrance to the ^FF0000Turn-In^000000.";
+	mes "If you fail or die, the door will close.";
+	next;
+
+	mes "[Turn-In Room]";
+	mes "Would you really like to take the challenge?";
+	mes "Choose the course.";
+	next;
+
+	switch(select("Room 1 (Lv 50+):Room 2 (Lv 100+)")) {
+
+		//--------------------------------------
+		// WARP 1 – Level 50+
+		//--------------------------------------
+		case 1:
+			if (BaseLevel < 50) {
+				mes "[Turn-In Room]";
+				mes "You must be at least Level ^FF000050^000000.";
+				close;
+			}
+			mes "[Turn-In Room]";
+			mes "Good luck!";
+			close2;
+			warp "cmd_bhole", 0, 0;
+			end;
+
+		//--------------------------------------
+		// WARP 2 – Level 100+
+		//--------------------------------------
+		case 2:
+			if (BaseLevel < 100) {
+				mes "[Turn-In Room]";
+				mes "You must be at least Level ^FF0000100^000000.";
+				close;
+			}
+			mes "[Turn-In Room]";
+			mes "Good luck!";
+			close2;
+			warp "jor_sklf2", 0, 0;
+			end;
+	}
+	end;
+}
+
+// Warp Portals
+//============================================================
+cmd_bhole, 255, 356, 0	warp	TurnInRoomWarp01	1,1,prontera,155,180
+
+jor_sklf2, 280, 174, 0	warp	TurnInRoomWarp03	1,1,prontera,155,180
+jor_sklf2, 280, 128, 0	warp	TurnInRoomWarp04	1,1,prontera,155,180
+jor_sklf2, 20, 174, 0	warp	TurnInRoomWarp05	1,1,prontera,155,180
+jor_sklf2, 21, 128, 0	warp	TurnInRoomWarp06	1,1,prontera,155,180
+
+//----------------------------------------------------------------------------
+// Monsters
+//----------------------------------------------------------------------------
+cmd_bhole, 0, 0	monster	Sleeper	1386, 200, 1000
+cmd_bhole, 0, 0	monster	Anopheles	1627, 100, 1000
+cmd_bhole, 0, 0	monster	Alarm	1193, 200, 1000
+cmd_bhole, 0, 0	monster	Rybio	1201, 100, 1000
+
+jor_sklf2, 0, 0	monster	Alicel	1735, 200, 1000
+jor_sklf2, 0, 0	monster	Wraith Dead	1291, 100, 1000
+jor_sklf2, 0, 0	monster	Anubis	1098, 200, 1000
+jor_sklf2, 0, 0	monster	Isilla	1772, 100, 1000
+
+//----------------------------------------------------------------------------
+// Mapflag
+//----------------------------------------------------------------------------
+cmd_bhole	mapflag	nosave	SavePoint
+cmd_bhole	mapflag	nowarp
+cmd_bhole	mapflag	nowarpto
+cmd_bhole	mapflag	noteleport
+cmd_bhole	mapflag	nomemo
+cmd_bhole	mapflag	nopenalty
+cmd_bhole	mapflag	nobranch
+cmd_bhole	mapflag	noicewall
+cmd_bhole	mapflag	norenewalexppenalty
+cmd_bhole	mapflag	norenewaldroppenalty
+
+jor_sklf2	mapflag	nosave	SavePoint
+jor_sklf2	mapflag	nowarp
+jor_sklf2	mapflag	nowarpto
+jor_sklf2	mapflag	noteleport
+jor_sklf2	mapflag	nomemo
+jor_sklf2	mapflag	nopenalty
+jor_sklf2	mapflag	nobranch
+jor_sklf2	mapflag	noicewall
+jor_sklf2	mapflag	norenewalexppenalty
+jor_sklf2	mapflag	norenewaldroppenalty
