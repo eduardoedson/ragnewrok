@@ -117606,8 +117606,41 @@ Body:
 #    AegisName: MEDJAY
 #  - Id: 22398
 #    AegisName: CP_MEDJAY
-#  - Id: 22399
-#    AegisName: OPHOIS
+  - Id: 22399
+    AegisName: OPHOIS
+    Name: Ophois
+    Level: 275
+    Hp: 27228250
+    STR: 244
+    AGI: 168
+    VIT: 194
+    INT: 157
+    DEX: 194
+    LUK: 304
+    Defense: 478
+    MagicDefense: 223
+    Size: Large
+    Race: Undead
+    Element: Dark
+    ElementLevel: 2
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    WalkSpeed: 180
+    AttackDelay: 900
+    AttackMotion: 336
+    ClientAttackMotion: 480
+    DamageMotion: 300
+    Ai: 04
+    Drops:
+      - Item: Congealed_Poison      # Exemplo — ver se existe no item_db
+        Rate: 500
+      - Item: Wind_Leaf_Gem
+        Rate: 300
+      - Item: Evil_Orb
+        Rate: 100
+      - Item: Amethyst
+        Rate: 50
 #  - Id: 22400
 #    AegisName: CP_OPHOIS
 #  - Id: 22401
