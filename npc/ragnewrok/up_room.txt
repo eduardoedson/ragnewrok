@@ -1,0 +1,32 @@
+prontera, 149, 182, 5	script	Turn-In Room	644,{
+
+	mes "[Turn-In Room]";
+	mes "This is the entrance to the ^FF0000Turn-In^000000.";
+	mes "If you fail or die, the door will close.";
+	close2;
+
+    // warp "cmd_bhole", 0, 0;
+    warp "jor_sklf2", 0, 0;
+}
+
+// Warp Portals
+//============================================================
+cmd_bhole, 255, 356, 0	warp	TurnInRoom01	1,1,prontera,155,180
+
+jor_sklf2, 280, 174, 0	warp	TurnInRoom02	1,1,prontera,155,180
+jor_sklf2, 280, 128, 0	warp	TurnInRoom02	1,1,prontera,155,180
+jor_sklf2, 20, 174, 0	warp	TurnInRoom02	1,1,prontera,155,180
+jor_sklf2, 21, 128, 0	warp	TurnInRoom02	1,1,prontera,155,180
+
+//----------------------------------------------------------------------------
+// Monsters
+//----------------------------------------------------------------------------
+cmd_bhole, 0, 0	monster	Sleeper	1386, 200, 0
+cmd_bhole, 0, 0	monster	Anopheles	1627, 100, 0
+cmd_bhole, 0, 0	monster	Alarm	1193, 200, 0
+cmd_bhole, 0, 0	monster	Rybio	1201, 100, 0
+
+jor_sklf2, 0, 0	monster	Alicel	1735, 200, 0
+jor_sklf2, 0, 0	monster	Wraith Dead	1291, 100, 0
+jor_sklf2, 0, 0	monster	Anubis	1098, 200, 0
+jor_sklf2, 0, 0	monster	Isilla	1772, 100, 0

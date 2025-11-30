@@ -46,25 +46,114 @@ Header:
   Type: BARTER_DB
   Version: 2
 
-Footer:
-  Imports:
-  - Path: npc/re/merchants/barters/cashmall.yml
-  - Path: npc/re/merchants/barters/enchan_illusion_dungeons.yml
-  - Path: npc/re/merchants/barters/enchantgrade.yml
-  - Path: npc/re/merchants/barters/Extended_Ammunition.yml
-  - Path: npc/re/merchants/barters/garden_of_time.yml
-  - Path: npc/re/merchants/barters/Gemstone_Bagger.yml
-  - Path: npc/re/merchants/barters/mysterious_cookie_shop.yml
-  - Path: npc/re/merchants/barters/quests_16_1.yml
-  - Path: npc/re/merchants/barters/quests_16_2.yml
-  - Path: npc/re/merchants/barters/quests_17_1.yml
-  - Path: npc/re/merchants/barters/quests_17_2.yml
-  - Path: npc/re/merchants/barters/quests_18.yml
-  - Path: npc/re/merchants/barters/quests_exp_175.yml
-  - Path: npc/re/merchants/barters/refine.yml
-  - Path: npc/re/merchants/barters/rgsr_in.yml
-  - Path: npc/re/merchants/barters/Pet_Groomer.yml
-  - Path: npc/ragnewrok/hats_top.yml
-  - Path: npc/ragnewrok/hats_middle.yml
-  - Path: npc/ragnewrok/hats_bottom.yml
+Body:
+  - Name: Hats Lower
+    Map: prontera
+    X: 144
+    Y: 173
+    Direction: East
+    Sprite: 4_M_FAIRYFREAK
+    Items:
+      - Index: 1
+        Item: Falconer_Flute_C
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 2
+        Item: Glastheim_Onlooker
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 3
+        Item: Protect_cloth
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 4
+        Item: Ghost_Fire
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 5
+        Item: Vassalage_Necklace
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 6
+        Item: Mob_Scarf 
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 8
+        Item: FortunetellinSealed 
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 9
+        Item: SurviveOrb  
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 10
+        Item: Tree_Of_Sprout_JP   
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 11
+        Item: Sleep_RedSheep   
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 16
+        Item: Heart_Card_In_Mouth
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 17
+        Item: Foxtail 
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+      - Index: 18
+        Item: Blood_Sucker  
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 300
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

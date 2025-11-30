@@ -46,25 +46,43 @@ Header:
   Type: BARTER_DB
   Version: 2
 
-Footer:
-  Imports:
-  - Path: npc/re/merchants/barters/cashmall.yml
-  - Path: npc/re/merchants/barters/enchan_illusion_dungeons.yml
-  - Path: npc/re/merchants/barters/enchantgrade.yml
-  - Path: npc/re/merchants/barters/Extended_Ammunition.yml
-  - Path: npc/re/merchants/barters/garden_of_time.yml
-  - Path: npc/re/merchants/barters/Gemstone_Bagger.yml
-  - Path: npc/re/merchants/barters/mysterious_cookie_shop.yml
-  - Path: npc/re/merchants/barters/quests_16_1.yml
-  - Path: npc/re/merchants/barters/quests_16_2.yml
-  - Path: npc/re/merchants/barters/quests_17_1.yml
-  - Path: npc/re/merchants/barters/quests_17_2.yml
-  - Path: npc/re/merchants/barters/quests_18.yml
-  - Path: npc/re/merchants/barters/quests_exp_175.yml
-  - Path: npc/re/merchants/barters/refine.yml
-  - Path: npc/re/merchants/barters/rgsr_in.yml
-  - Path: npc/re/merchants/barters/Pet_Groomer.yml
-  - Path: npc/ragnewrok/hats_top.yml
-  - Path: npc/ragnewrok/hats_middle.yml
-  - Path: npc/ragnewrok/hats_bottom.yml
+Body:
+  - Name: Hats Middle
+    Map: prontera
+    X: 147
+    Y: 172
+    Direction: North
+    Sprite: 4_M_MELODY
+    Items:
+      - Index: 0
+        Item: Vanargand_Helm
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 200
+      - Index: 1
+        Item: Green_Potion
+        RequiredItems:
+          - Index: 0
+            Item: Red_Potion
+            Amount: 10
 
+  - Name: Hats Lower
+    Map: prontera
+    X: 147
+    Y: 170
+    Direction: North
+    Sprite: 4_M_FAIRYFREAK
+    Items:
+      - Index: 0
+        Item: Vanargand_Helm
+        RequiredItems:
+          - Index: 0
+            Item: Beginner_Coin
+            Amount: 200
+      - Index: 1
+        Item: Green_Potion
+        RequiredItems:
+          - Index: 0
+            Item: Red_Potion
+            Amount: 10

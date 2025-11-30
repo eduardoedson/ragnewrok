@@ -10057,6 +10057,41 @@ void clif_name( block_list* src, block_list *bl, send_target target ){
 #if PACKETVER_MAIN_NUM >= 20180207 || PACKETVER_RE_NUM >= 20171129 || PACKETVER_ZERO_NUM >= 20171130
 				unit_data *ud = unit_bl2ud(bl);
 
+				int ele_group = -1;
+				char ele_name[8] = {0};
+				char output[16] = {0};
+
+				// Show Element Info [Hyroshima]
+				if(battle_config.mob_ele_view)
+				{
+					switch(md->status.def_ele)
+					{
+						case 0: ele_group = 51; strcpy(ele_name,"Neutral");	break;
+						case 1: ele_group = 52; strcpy(ele_name,"Water"); break;
+						case 2: ele_group = 53; strcpy(ele_name,"Earth"); break;
+						case 3: ele_group = 54; strcpy(ele_name,"Fire"); break;
+						case 4: ele_group = 55; strcpy(ele_name,"Wind"); break;
+						case 5: ele_group = 59; strcpy(ele_name,"Poison"); break;
+						case 6: ele_group = 57; strcpy(ele_name,"Holy"); break;
+						case 7: ele_group = 58; strcpy(ele_name,"Shadow"); break;
+						case 8: ele_group = 59; strcpy(ele_name,"Ghost"); break;
+						case 9: ele_group = 60; strcpy(ele_name,"Undead"); break;
+						default: break;
+					}
+
+					if(ud != nullptr)
+					{
+						if(ele_group > -1)
+							md->ud.group_id = ele_group;
+						
+						if(strlen(ele_name))
+						{
+							safesnprintf(output,sizeof(output),"%s Lv: %d",ele_name,md->status.ele_lv);
+							safestrncpy(ud->title, output, NAME_LENGTH);
+						}
+					}
+				}
+
 				if (ud != nullptr) {
 					memcpy(packet.title, ud->title, NAME_LENGTH);
 					packet.groupId = ud->group_id;
@@ -11605,13 +11640,17 @@ void clif_parse_Emotion(int32 fd, map_session_data *sd){
 		return;
 	}
 
-	const PACKET_CZ_REQ_EMOTION* p = reinterpret_cast<PACKET_CZ_REQ_EMOTION*>( RFIFOP( fd, 0 ) );
+#if PACKETVER_MAIN_NUM >= 20230705
+	emotion_type emoticon = static_cast<emotion_type>(RFIFOB(fd, packet_db[RFIFOW(fd, 0)].pos[0]));
+#else
+	const PACKET_CZ_REQ_EMOTION* p = reinterpret_cast<PACKET_CZ_REQ_EMOTION*>(RFIFOP(fd, 0));
 
 	if( p->emotion_type >= ET_MAX ){
 		return;
 	}
 	
 	emotion_type emoticon = static_cast<emotion_type>( p->emotion_type );
+#endif
 
 	if (battle_config.basic_skill_check == 0 || pc_checkskill(sd, NV_BASIC) >= 2 || pc_checkskill(sd, SU_BASIC_SKILL) >= 1) {
 		if (emoticon == ET_CHAT_PROHIBIT) {// prevent use of the mute emote [Valaris]

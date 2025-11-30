@@ -228,9 +228,16 @@ Body:
       can_trade: true
       can_party: true
       command_enable: true
-      all_skill: false
-      all_equipment: false
-      skill_unconditional: false
+      all_skill: true
+      all_equipment: true
+      view_hpmeter: true
+      hack_info: true
+      join_chat: true
+      kick_chat: true
+      hide_session: true
+      who_display_aid: true
+      any_warp: true
+      skill_unconditional: true
       use_check: true
       use_changemaptype: true
       all_commands: true

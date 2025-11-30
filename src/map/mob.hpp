@@ -24,7 +24,7 @@ struct guardian_data;
 
 // The number of drops all mobs can have
 #ifndef MAX_MOB_DROP
-	#define MAX_MOB_DROP 10
+	#define MAX_MOB_DROP 100
 #endif
 // The number of MVP drops all mobs can have
 #ifndef MAX_MVP_DROP

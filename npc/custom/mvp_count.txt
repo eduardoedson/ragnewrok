@@ -1,0 +1,87 @@
+//========== MVP Bounty Script ================
+//===== Compatible with rAthena emulator =================
+//======== Current script Version: 1.0 ===================
+//============ Scripted by: Zeref =====================
+//======= Script Features =================================
+//= Tracks MVP kill counts for specified MVPs
+//= Rewards players when they reach kill milestones
+//= Announces milestone achievements server-wide
+//= Customizable MVP IDs, reward items, and amounts
+//= Customizable kill milestones for rewards
+//= @bounty command to display current MVP kill counts
+//========================================================
+
+/*
+CREATE TABLE `mvp_kill_counts` (
+  `char_id` int(11) NOT NULL,
+  `mvp_id` int(11) NOT NULL,
+  `kill_count` int(11) NOT NULL DEFAULT 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+*/
+-	script	MVP_Reward_System	-1,{
+
+    OnInit:
+        setarray .mvp_ids[0], 1112, 1768; // Add more MVP IDs here
+        setarray .reward_item_ids[0], 40096, 40099; // reward item IDs
+        setarray .reward_amounts[0], 1, 1; // reward amounts
+        set .kill_milestone, 50; // Kill milestone for all MVPs
+        bindatcmd "bounty", strnpcinfo(0) + "::OnCommand";
+        end;
+
+    OnNPCKillEvent:
+        set .@mvp_index, inarray(.mvp_ids, killedrid);
+        if (.@mvp_index == -1) {
+            end;
+        }
+
+        query_sql("SELECT `kill_count` FROM `mvp_kill_counts` WHERE `char_id` = " + getcharid(0) + " AND `mvp_id` = " + .mvp_ids[.@mvp_index], .@kill);
+        if (getarraysize(.@kill) == 0) {
+            set .@kill, 0;
+        }
+
+        set .@kill, .@kill + 1;
+        query_sql("REPLACE INTO `mvp_kill_counts` (`char_id`, `mvp_id`, `kill_count`) VALUES (" + getcharid(0) + ", " + .mvp_ids[.@mvp_index] + ", " + .@kill + ")");
+
+        if (.@kill >= .kill_milestone) {
+            set .@kill, 0;
+            query_sql("REPLACE INTO `mvp_kill_counts` (`char_id`, `mvp_id`, `kill_count`) VALUES (" + getcharid(0) + ", " + .mvp_ids[.@mvp_index] + ", " + .@kill + ")");
+
+            set .@mvp_name$, getmonsterinfo(.mvp_ids[.@mvp_index], 0);
+            announce strcharinfo(0) + " has achieved a milestone by defeating " + .@mvp_name$ + " " + .kill_milestone + " times! Congratulations and enjoy your reward!", bc_all;
+            getitem .reward_item_ids[.@mvp_index], .reward_amounts[.@mvp_index];
+        }
+
+        end;
+
+    OnCommand:
+	dispbottom "====Zeref Script====";
+	dispbottom "====Welcome to MVP Bounty Kill Board====";
+	dispbottom "Normal Bounty | Drake | Prize:100CP";
+	dispbottom "Hard Bounty | Gloom Under Night | Prize:500CP";
+	dispbottom "===============================================";
+        if (getarraysize(@MVP_Kill_Count) == 0) {
+            setarray @MVP_Kill_Count[getarraysize(.mvp_ids)], 0;
+        }
+
+        setarray .@temp_kill_counts[0], 0, 0, 0;
+
+        for (set .@i, 0; .@i < getarraysize(.mvp_ids); .@i++) {
+            query_sql("SELECT `kill_count` FROM `mvp_kill_counts` WHERE `char_id` = " + getcharid(0) + " AND `mvp_id` = " + .mvp_ids[.@i], .@kill);
+            if (getarraysize(.@kill) == 0) {
+                set .@temp_kill_counts[.@i], 0;
+            } else {
+                set .@temp_kill_counts[.@i], .@kill[0];
+            }
+        }
+
+        set .@message$, "MVP Kill Count: ";
+        for (set .@i, 0; .@i < getarraysize(.mvp_ids); .@i++) {
+            set .@mvp_name$, getmonsterinfo(.mvp_ids[.@i], 0);
+            set .@message$, .@message$ + .@mvp_name$ + " - " + .@temp_kill_counts[.@i] + " kills";
+            if (.@i < getarraysize(.mvp_ids) - 1) {
+                set .@message$, .@message$ + ", ";
+            }
+        }
+        dispbottom .@message$;
+        end;
+}
