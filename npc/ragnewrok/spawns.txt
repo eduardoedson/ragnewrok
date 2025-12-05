@@ -1,120 +1,5 @@
-moc_akhet,0,0	monster	Cp Ophois	22400,20,5000
-moc_akhet,0,0	monster	Heka	22401,75,5000
-moc_akhet,0,0	monster	Cp Heka	22402,14,5000
-moc_akhet,0,0	monster	Guide Of Dead	22404,1,5000
-jor_sklf2,0,0	monster	Ep21 Yortus A H	22412,100,5000
-jor_sklf2,0,0	monster	Ep21 Yortus B H	22413,100,5000
-jor_sklf1,0,0	monster	Ep21 Yordos C H	22414,100,5000
-jor_sklf2,0,0	monster	Ep21 Yordos C H	22414,35,5000
-jor_sklf1,0,0	monster	Ep21 Yordos B H	22415,100,5000
-jor_sklf2,0,0	monster	Ep21 Yordos B H	22415,35,5000
-jor_sklf1,0,0	monster	Ep21 Yordos A H	22416,100,5000
-jor_sklf2,0,0	monster	Ep21 Yordos A H	22416,35,5000
-jor_sklf1,0,0	monster	Ep21 Yormi A H	22417,100,5000
-jor_sklf1,0,0	monster	Ep21 Yormi B H	22418,100,5000
-jor_sklf2,0,0	monster	Ep21 Yoscopus A H	22419,100,5000
-jor_sklf2,0,0	monster	Ep21 Yoscopus B H	22420,100,5000
-jor_sklf1,0,0	monster	Ep21 B Yortus A H	22421,1,5000
-jor_sklf2,0,0	monster	Ep21 B Yortus B H	22422,1,5000
-cmd_bhole,0,0	monster	Tatsi	22431,100,5000
-cmd_bhole,0,0	monster	Cp Tatsi	22433,17,5000
-cmd_bhole,0,0	monster	Guerrero	22434,100,5000
-cmd_bhole,0,0	monster	Hanom	22435,90,5000
-cmd_bhole,0,0	monster	Sirena	22436,60,5000
-cmd_bhole,0,0	monster	Diosa	22437,100,5000
-cmd_bhole,0,0	monster	Peska	22438,1,5000
-cmd_bhole,0,0	monster	Cp Guerrero	22439,17,5000
-cmd_bhole,0,0	monster	Cp Hanom	22440,15,5000
-cmd_bhole,0,0	monster	Cp Sirena	22441,10,5000
-cmd_bhole,0,0	monster	Cp Diosa	22442,16,5000
-ygg_roots,0,0	monster	Ch1 Yggring	22443,10,5000
-ygg_roots,0,0	monster	Ch1 Leafeing	22444,10,5000
-mu_fild01,0,0	monster	Ch1 Charcoaring	22445,30,5000
-mu_fild01,0,0	monster	Ch1 Vulring	22446,30,5000
-mu_fild01,0,0	monster	Ch1 Fireloop	22447,45,5000
-mu_fild01,0,0	monster	Ch1 Firafflesia	22448,45,5000
-mu_fild01,0,0	monster	Ch1 Volimpet	22449,45,5000
-mu_fild01,0,0	monster	Ch1 Fire Flower	22450,15,5000
-hem_fild,0,0	monster	Ch1 Peeping	22451,52,5000
-hem_fild,0,0	monster	Ch1 Silk Frog	22452,28,5000
-hem_fild,0,0	monster	Ch1 Silk Snail	22453,28,5000
-hem_dun01,0,0	monster	Ch1 Ex Robot	22454,60,5000
-hem_dun01,0,0	monster	Ch1 Repair Robot	22455,60,5000
-hem_dun01,0,0	monster	Ch1 Dimic 1	22456,20,5000
-hem_dun01,0,0	monster	Ch1 Dimic 2	22457,20,5000
-hem_dun01,0,0	monster	Ch1 Dimic 3	22458,20,5000
-hem_dun01,0,0	monster	Ch1 Dimic 4	22459,20,5000
-ch1_que01,0,0	monster	Ch1 Immortal Corps1	22460,5,5000
-hem_dun01,0,0	monster	Ch1 Immortal Corps1	22460,15,5000
-hem_fild,0,0	monster	Ch1 Immortal Corps1	22460,12,5000
-ch1_que01,0,0	monster	Ch1 Immortal Corps2	22461,5,5000
-hem_dun01,0,0	monster	Ch1 Immortal Corps2	22461,15,5000
-hem_fild,0,0	monster	Ch1 Immortal Corps2	22461,12,5000
-ch1_que01,0,0	monster	Ch1 Immortal Corps3	22462,5,5000
-hem_dun01,0,0	monster	Ch1 Immortal Corps3	22462,15,5000
-hem_fild,0,0	monster	Ch1 Immortal Corps3	22462,12,5000
-uknw_ruin,0,0	monster	Ch1 Nyaise	22463,15,5000
-uknw_ruin2,0,0	monster	Ch1 Nyaise	22463,15,5000
-uknw_ruin,0,0	monster	Ch1 Shadow Jailer	22464,15,5000
-uknw_ruin2,0,0	monster	Ch1 Shadow Jailer	22464,15,5000
-uknw_ruin,0,0	monster	Ch1 Tulip	22465,60,5000
-uknw_ruin,0,0	monster	Ch1 Calendula	22466,60,5000
-uknw_ruin,0,0	monster	Ch1 Scabiosa	22467,35,5000
-uknw_ruin2,0,0	monster	Ch1 Lobelia	22468,35,5000
-uknw_ruin2,0,0	monster	Ch1 Myosotis	22469,60,5000
-uknw_ruin2,0,0	monster	Ch1 Anemone	22470,60,5000
-hem_dun02,0,0	monster	Ch1 Skogl	22471,50,5000
-hem_dun02,0,0	monster	Ch1 Frus	22472,50,5000
-hem_dun02,0,0	monster	Ch1 Listener	22473,50,5000
-hem_dun02,0,0	monster	Ch1 Immortal Officer1	22474,25,5000
-hem_dun02,0,0	monster	Ch1 Immortal Officer2	22475,25,5000
-ch1_gfn01,0,0	monster	Ch1 Toxit	22476,35,5000
-ch1_gfn03,0,0	monster	Ch1 Toxit	22476,35,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Toxit	22477,6,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Toxit	22477,6,5000
-ch1_gfn01,0,0	monster	Ch1 Lunarina	22478,35,5000
-ch1_gfn03,0,0	monster	Ch1 Lunarina	22478,35,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Lunarina	22479,6,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Lunarina	22479,6,5000
-ch1_gfn01,0,0	monster	Ch1 Bloody Slasher	22480,35,5000
-ch1_gfn03,0,0	monster	Ch1 Bloody Slasher	22480,35,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Bloody Slasher	22481,6,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Bloody Slasher	22481,6,5000
-ch1_gfn01,0,0	monster	Ch1 Shadiest	22482,35,5000
-ch1_gfn03,0,0	monster	Ch1 Shadiest	22482,35,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Shadiest	22483,6,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Shadiest	22483,6,5000
-ch1_gfn01,0,0	monster	Ch1 Succubus	22484,18,5000
-ch1_gfn03,0,0	monster	Ch1 Succubus	22484,18,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Succubus	22485,3,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Succubus	22485,3,5000
-ch1_gfn01,0,0	monster	Ch1 Inccubus	22486,18,5000
-ch1_gfn03,0,0	monster	Ch1 Inccubus	22486,18,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Inccubus	22487,3,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Inccubus	22487,3,5000
-ch1_gfn01,0,0	monster	Ch1 Abyss Knight	22488,18,5000
-ch1_gfn03,0,0	monster	Ch1 Abyss Knight	22488,18,5000
-ch1_gfn01,0,0	monster	Cp Ch1 Abyss Knight	22489,3,5000
-ch1_gfn03,0,0	monster	Cp Ch1 Abyss Knight	22489,3,5000
-mu_fild01,0,0	monster	Ch1 Bulgasari	22494,1,5000
-uknw_ruin2,0,0	monster	Ch1 Glutto	22495,1,5000
-jor_back6,0,0	monster	Ep20 Armoerdcopo	23060,55,5000
-odin_past,0,0	monster	Angelgolt	20604,40,5000
-odin_past,0,0	monster	Angelgolt2	20605,60,5000
-odin_past,0,0	monster	Holy Frus	20606,45,5000
-odin_past,0,0	monster	Holy Skogul	20607,45,5000
-odin_past,0,0	monster	Plasma Arch	20608,5,60000
-odin_past,0,0	monster	Plasma Spt	20609,5,60000
-nif_dun01,0,0	monster	Ghost Cube	20938,60,5000
-nif_dun01,0,0	monster	Lude Gal	20939,60,5000
-nif_dun01,0,0	monster	Brutal Murderer	20937,60,5000
-nif_dun01,0,0	monster	Gan Ceann	20935,60,5000
-amicitia2,0,0	monster	Chimera Lava	20920,65,5000
-amicitia2,0,0	monster	Chimera Fulgor	20921,65,5000
-amicitia2,0,0	monster	Chimera Napeo	20922,65,5000
-amicitia2,0,0	monster	Chimera Galensis	20923,65,5000
-clock_01,0,0	monster	Extra Joker	20175,15,5000
-clock_01,0,0	monster	Extra Joker	20175,60,5000
+clock_01,0,0	monster	Joker	20175,15,5000
+clock_01,0,0	monster	Joker	20175,60,5000
 clock_01,0,0	monster	Erzsebet	20176,55,5000
 clock_01,0,0	monster	Erzsebet	20176,75,5000
 clock_01,0,0	monster	Jeniffer	20177,40,5000
@@ -123,27 +8,233 @@ clock_01,0,0	monster	General Orc	20178,40,5000
 clock_01,0,0	monster	General Orc	20178,75,5000
 clock_01,0,0	monster	Sieglouse	20179,30,5000
 clock_01,0,0	monster	Sieglouse	20179,70,5000
-mjo_wst01,0,0	monster	Punch Bug	21951,90,5000
-mjo_wst01,0,0	monster	Aferde	21952,90,5000
-mjo_wst01,0,0	monster	Dispol	21953,90,5000
-mjo_wst01,0,0	monster	Timbers	21954,90,5000
+prt_mz03_i,0,0	monster	Baphomet	20525,20,5000
+prt_mz03_i,0,0	monster	Baphomet	20525,15,5000
+prt_mz03_i,0,0	monster	Side Winder	20526,20,5000
+prt_mz03_i,0,0	monster	Side Winder	20526,12,15000
+prt_mz03_i,0,0	monster	Hunter Fly	20527,20,5000
+prt_mz03_i,0,0	monster	Hunter Fly	20527,12,15000
+prt_mz03_i,0,0	monster	Mantis	20528,20,5000
+prt_mz03_i,0,0	monster	Mantis	20528,12,15000
+prt_mz03_i,0,0	monster	Ghostring	20529,7,5000
+prt_mz03_i,0,0	monster	Ghostring	20529,5,5000
+prt_mz03_i,0,0	monster	Killer Mantis	20530,20,5000
+prt_mz03_i,0,0	monster	Killer Mantis	20530,12,15000
+prt_mz03_i,0,0	monster	Poporing	20531,20,5000
+prt_mz03_i,0,0	monster	Poporing	20531,12,15000
+prt_mz03_i,0,0	monster	Stem Worm	20532,12,15000
+odin_past,0,0	monster	Angelgolt	20604,40,5000
+odin_past,0,0	monster	Angelgolt	20605,60,5000
+odin_past,0,0	monster	Holy Frus	20606,45,5000
+odin_past,0,0	monster	Holy Skogul	20607,45,5000
+odin_past,0,0	monster	Plasma Arch	20608,5,60000
+odin_past,0,0	monster	Plasma Spt	20609,5,60000
+odin_past,0,0	boss_monster	Reginleif	20610,1,5000
+odin_past,0,0	boss_monster	Ingrid	20611,1,5000
+abyss_04,0,0	monster	Ferus	20612,25,5000
+abyss_04,0,0	monster	Treasure Mimic	20613,15,5000
+abyss_04,0,0	monster	Acidus	20614,35,5000
+abyss_04,0,0	monster	Acidus	20615,35,5000
+abyss_04,0,0	monster	Bone Ferus	20616,50,5000
+abyss_04,0,0	monster	Bone Acidus	20617,50,5000
+abyss_04,0,0	monster	Bone Detale	20618,1,10800000
+amicitia2,0,0	monster	Chimera Lava	20920,65,5000
+amicitia2,0,0	monster	Chimera Fulgor	20921,65,5000
+amicitia2,0,0	monster	Chimera Napeo	20922,65,5000
+amicitia2,0,0	monster	Chimera Galensis	20923,65,5000
+nif_dun01,0,0	monster	Gan Ceann	20935,60,5000
+nif_dun01,0,0	monster	Brutal Murderer	20937,60,5000
+nif_dun01,0,0	monster	Ghost Cube	20938,60,5000
+nif_dun01,0,0	monster	Lude Gal	20939,60,5000
+jor_back2,0,0	monster	Limacina	21520,70,5000
+jor_back3,0,0	monster	Limacina	21520,70,5000
+jor_back2,0,0	monster	Unfrost Flower	21521,70,5000
+jor_back3,0,0	monster	Calmaring	21522,70,5000
+jor_back4,0,0	monster	Calmaring	21522,10,5000
+jor_back1,0,0	monster	Ice Straw	21523,80,5000
+jor_back2,0,0	monster	Ice Straw	21523,35,5000
+jor_back4,0,0	monster	Ice Straw	21523,10,5000
+jor_back1,0,0	monster	Shining Seaweed	21524,60,5000
+jor_back5,0,0	monster	Shining Seaweed	21524,10,5000
+jor_back6,0,0	monster	Shining Seaweed	21524,10,5000
+jor_tail,0,0	monster	Shining Seaweed	21524,80,5000
+jor_back1,0,0	monster	Ice Gangu	21525,60,5000
+jor_back2,0,0	monster	Ice Gangu	21525,25,5000
+jor_back3,0,0	monster	Ice Gangu	21525,20,5000
+jor_tail,0,0	monster	Ice Gangu	21525,90,5000
+jor_back3,0,0	monster	Rgan A	21526,30,5000
+jor_dun01,0,0	monster	Rgan A	21526,110,5000
+jor_back3,0,0	monster	Rgan B	21527,15,5000
+jor_dun01,0,0	monster	Rgan B	21527,60,5000
+jor_dun02,0,0	monster	Rgan B	21527,90,5000
+jor_dun01,0,0	monster	Rgan C	21528,20,5000
+jor_dun02,0,0	monster	Rgan C	21528,80,5000
+jor_dun02,0,0	monster	Rgan D	21529,20,5000
+jor_back3,0,0	monster	Limacina Boss	21537,1,21600000
+jor_ab01,0,0	monster	Wasted Rgan A	21538,70,5000
+jor_ab02,0,0	monster	Wasted Rgan C	21539,70,5000
+jor_ab01,0,0	monster	Cave Calmaring	21540,70,5000
+jor_ab01,0,0	monster	Cave Flower	21541,60,5000
+jor_ab02,0,0	monster	Hallucigenia	21542,70,5000
+jor_ab01,0,0	monster	Hallucigenia Baby	21543,60,5000
+jor_ab02,0,0	monster	One Eye Dollocaris	21544,60,5000
+jor_ab02,0,0	monster	Dollocaris	21545,60,5000
+bl_grass,0,0	monster	Cornus	21548,40,5000
+bl_grass,0,0	monster	Pinguicula	21549,45,5000
+bl_grass,0,0	monster	Hunter Fly	21550,25,5000
+bl_grass,0,0	monster	Rocker	21551,40,5000
+bl_grass,0,0	monster	Savage	21552,40,5000
+bl_grass,0,0	monster	Flora	21553,25,5000
+bl_grass,0,0	monster	HWind	21554,45,5000
+bl_grass,0,0	monster	Mistress	21555,1,21600000
+bl_lava,0,0	monster	Deleter	21557,40,5000
+bl_lava,0,0	monster	Jakk	21558,30,5000
+bl_lava,0,0	monster	Lava Golem	21559,35,5000
+bl_lava,0,0	monster	Majoruros	21560,30,5000
+bl_lava,0,0	monster	Hydro	21561,15,5000
+bl_lava,0,0	monster	Acidus	21562,35,5000
+bl_lava,0,0	monster	Detale	21563,1,21600000
+bl_ice,0,0	monster	Ice Titan	21564,35,5000
+bl_ice,0,0	monster	Siroma	21565,35,5000
+bl_ice,0,0	monster	Snowier	21566,35,5000
+bl_ice,0,0	monster	Centipede	21567,35,5000
+bl_ice,0,0	monster	Aqua Elemental	21568,45,5000
+bl_ice,0,0	monster	Angelgolt	21569,25,5000
+bl_ice,0,0	monster	Rhyncho	21570,15,5000
+bl_ice,0,0	monster	Ktullanux	21571,1,21600000
+bl_death,0,0	monster	Ancient Mummy	21572,30,5000
+bl_death,0,0	monster	Lude	21573,35,5000
+bl_death,0,0	monster	Ragged Zombie	21574,30,5000
+bl_death,0,0	monster	Wraith	21575,35,5000
+bl_death,0,0	monster	Flame Skull	21576,35,5000
+bl_death,0,0	monster	Banshee	21577,45,5000
+bl_death,0,0	monster	Knight Of Abyss	21578,15,5000
+bl_death,0,0	monster	Lord Of Death	21579,1,21600000
+jor_dun01,0,0	monster	Hearthunter	21599,10,5000
+jor_dun02,0,0	monster	Hearthunter	21599,10,5000
+jor_ab01,0,0	monster	Rgan	21600,10,5000
+jor_ab02,0,0	monster	Rgan	21601,10,5000
 ra_pol01,0,0	monster	Burning Knight	21946,125,5000
 ra_pol01,0,0	monster	Dedsera	21947,100,5000
 ra_pol01,0,0	monster	Hardrock Titan	21948,125,5000
 ra_pol01,0,0	monster	Deadween	21949,125,5000
+mjo_wst01,0,0	monster	Punch Bug	21951,90,5000
+mjo_wst01,0,0	monster	Aferde	21952,90,5000
+mjo_wst01,0,0	monster	Dispol	21953,90,5000
+mjo_wst01,0,0	monster	Timbers	21954,90,5000
 nif_fild03,0,0	monster	Violen	22383,60,5000
-nif_fild03,0,0	monster	Cp Violen	22384,10,5000
+nif_fild03,0,0	monster	Violen	22384,10,5000
 nif_fild03,0,0	monster	Spiding	22385,105,5000
-nif_fild03,0,0	monster	Cp Spiding	22386,17,5000
+nif_fild03,0,0	monster	Spiding	22386,17,5000
 nif_fild03,0,0	monster	Garling	22387,75,5000
-nif_fild03,0,0	monster	Cp Garling	22388,14,5000
-nif_fild03,0,0	monster	Cp Jackonette	22390,17,5000
+nif_fild03,0,0	monster	Garling	22388,14,5000
+nif_fild03,0,0	monster	Jackonette	22390,17,5000
 nif_fild03,0,0	monster	Liamette	22391,105,5000
-nif_fild03,0,0	monster	Cp Liamette	22392,17,5000
-nif_fild03,0,0	monster	Nightmare Piamette	22394,1,5000
+nif_fild03,0,0	monster	Liamette	22392,17,5000
+nif_fild03,0,0	boss_monster	Nightmare Piamette	22394,1,5000
 moc_akhet,0,0	monster	Medjed	22395,120,5000
-moc_akhet,0,0	monster	Cp Medjed	22396,23,5000
+moc_akhet,0,0	monster	Medjed	22396,23,5000
 moc_akhet,0,0	monster	Medjay	22397,120,5000
-moc_akhet,0,0	monster	Cp Medjay	22398,23,5000
+moc_akhet,0,0	monster	Medjay	22398,23,5000
 moc_akhet,0,0	monster	Ophois	22399,105,5000
-moc_akhet,0,0	monster	Guide Of Dead	22404,1,5000
+moc_akhet,0,0	monster	Ophois	22400,20,5000
+moc_akhet,0,0	monster	Heka	22401,75,5000
+moc_akhet,0,0	monster	Heka	22402,14,5000
+moc_akhet,0,0	boss_monster	Guide Of Dead	22404,1,5000
+jor_sklf2,0,0	monster	Yortus	22412,100,5000
+jor_sklf2,0,0	monster	Yortus	22413,100,5000
+jor_sklf1,0,0	monster	Yordos	22414,100,5000
+jor_sklf2,0,0	monster	Yordos	22414,35,5000
+jor_sklf1,0,0	monster	Yordos	22415,100,5000
+jor_sklf2,0,0	monster	Yordos	22415,35,5000
+jor_sklf1,0,0	monster	Yordos	22416,100,5000
+jor_sklf2,0,0	monster	Yordos	22416,35,5000
+jor_sklf1,0,0	monster	Yormi	22417,100,5000
+jor_sklf1,0,0	monster	Yormi	22418,100,5000
+jor_sklf2,0,0	monster	Yoscopus	22419,100,5000
+jor_sklf2,0,0	monster	Yoscopus	22420,100,5000
+jor_sklf1,0,0	monster	Yortus	22421,1,5000
+jor_sklf2,0,0	monster	Yortus	22422,1,5000
+cmd_bhole,0,0	monster	Tatsi	22431,100,5000
+cmd_bhole,0,0	monster	Tatsi	22433,17,5000
+cmd_bhole,0,0	monster	Guerrero	22434,100,5000
+cmd_bhole,0,0	monster	Hanom	22435,90,5000
+cmd_bhole,0,0	monster	Sirena	22436,60,5000
+cmd_bhole,0,0	monster	Diosa	22437,100,5000
+cmd_bhole,0,0	monster	Peska	22438,1,5000
+cmd_bhole,0,0	monster	Guerrero	22439,17,5000
+cmd_bhole,0,0	monster	Hanom	22440,15,5000
+cmd_bhole,0,0	monster	Sirena	22441,10,5000
+cmd_bhole,0,0	monster	Diosa	22442,16,5000
+ygg_roots,0,0	monster	Yggring	22443,10,5000
+ygg_roots,0,0	monster	Leafeing	22444,10,5000
+mu_fild01,0,0	monster	Charcoaring	22445,30,5000
+mu_fild01,0,0	monster	Vulring	22446,30,5000
+mu_fild01,0,0	monster	Fireloop	22447,45,5000
+mu_fild01,0,0	monster	Firafflesia	22448,45,5000
+mu_fild01,0,0	monster	Volimpet	22449,45,5000
+mu_fild01,0,0	monster	Fire Flower	22450,15,5000
+hem_fild,0,0	monster	Peeping	22451,52,5000
+hem_fild,0,0	monster	Silk Frog	22452,28,5000
+hem_fild,0,0	monster	Silk Snail	22453,28,5000
+hem_dun01,0,0	monster	Ex Robot	22454,60,5000
+hem_dun01,0,0	monster	Repair Robot	22455,60,5000
+hem_dun01,0,0	monster	Dimic   22456,20,5000
+hem_dun01,0,0	monster	Dimic	22457,20,5000
+hem_dun01,0,0	monster	Dimic	22458,20,5000
+hem_dun01,0,0	monster	Dimic	22459,20,5000
+ch1_que01,0,0	monster	Immortal Corps	22460,5,5000
+hem_dun01,0,0	monster	Immortal Corps	22460,15,5000
+hem_fild,0,0	monster	Immortal Corps	22460,12,5000
+ch1_que01,0,0	monster	Immortal Corps	22461,5,5000
+hem_dun01,0,0	monster	Immortal Corps	22461,15,5000
+hem_fild,0,0	monster	Immortal Corps	22461,12,5000
+ch1_que01,0,0	monster	Immortal Corps	22462,5,5000
+hem_dun01,0,0	monster	Immortal Corps	22462,15,5000
+hem_fild,0,0	monster	Immortal Corps	22462,12,5000
+uknw_ruin,0,0	monster	Nyaise	22463,15,5000
+uknw_ruin2,0,0	monster	Nyaise	22463,15,5000
+uknw_ruin,0,0	monster	Shadow Jailer	22464,15,5000
+uknw_ruin2,0,0	monster	Shadow Jailer	22464,15,5000
+uknw_ruin,0,0	monster	Tulip	22465,60,5000
+uknw_ruin,0,0	monster	Calendula	22466,60,5000
+uknw_ruin,0,0	monster	Scabiosa	22467,35,5000
+uknw_ruin2,0,0	monster	Lobelia	22468,35,5000
+uknw_ruin2,0,0	monster	Myosotis	22469,60,5000
+uknw_ruin2,0,0	monster	Anemone	22470,60,5000
+hem_dun02,0,0	monster	Skogl	22471,50,5000
+hem_dun02,0,0	monster	Frus	22472,50,5000
+hem_dun02,0,0	monster	Listener	22473,50,5000
+hem_dun02,0,0	monster	Immortal Officer	22474,25,5000
+hem_dun02,0,0	monster	Immortal Officer	22475,25,5000
+ch1_gfn01,0,0	monster	Toxit	22476,35,5000
+ch1_gfn03,0,0	monster	Toxit	22476,35,5000
+ch1_gfn01,0,0	monster	Toxit	22477,6,5000
+ch1_gfn03,0,0	monster	Toxit	22477,6,5000
+ch1_gfn01,0,0	monster	Lunarina	22478,35,5000
+ch1_gfn03,0,0	monster	Lunarina	22478,35,5000
+ch1_gfn01,0,0	monster	Lunarina	22479,6,5000
+ch1_gfn03,0,0	monster	Lunarina	22479,6,5000
+ch1_gfn01,0,0	monster	Bloody Slasher	22480,35,5000
+ch1_gfn03,0,0	monster	Bloody Slasher	22480,35,5000
+ch1_gfn01,0,0	monster	Bloody Slasher	22481,6,5000
+ch1_gfn03,0,0	monster	Bloody Slasher	22481,6,5000
+ch1_gfn01,0,0	monster	Shadiest	22482,35,5000
+ch1_gfn03,0,0	monster	Shadiest	22482,35,5000
+ch1_gfn01,0,0	monster	Shadiest	22483,6,5000
+ch1_gfn03,0,0	monster	Shadiest	22483,6,5000
+ch1_gfn01,0,0	monster	Succubus	22484,18,5000
+ch1_gfn03,0,0	monster	Succubus	22484,18,5000
+ch1_gfn01,0,0	monster	Succubus	22485,3,5000
+ch1_gfn03,0,0	monster	Succubus	22485,3,5000
+ch1_gfn01,0,0	monster	Inccubus	22486,18,5000
+ch1_gfn03,0,0	monster	Inccubus	22486,18,5000
+ch1_gfn01,0,0	monster	Inccubus	22487,3,5000
+ch1_gfn03,0,0	monster	Inccubus	22487,3,5000
+ch1_gfn01,0,0	monster	Abyss Knight	22488,18,5000
+ch1_gfn03,0,0	monster	Abyss Knight	22488,18,5000
+ch1_gfn01,0,0	monster	Abyss Knight	22489,3,5000
+ch1_gfn03,0,0	monster	Abyss Knight	22489,3,5000
+mu_fild01,0,0	monster	Bulgasari	22494,1,5000
+uknw_ruin2,0,0	monster	Glutto	22495,1,5000
+jor_back6,0,0	monster	Armoerdcopo	23060,55,5000

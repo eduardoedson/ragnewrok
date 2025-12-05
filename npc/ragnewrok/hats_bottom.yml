@@ -48,9 +48,9 @@ Header:
 
 Body:
   - Name: Hats Lower
-    Map: prontera
-    X: 144
-    Y: 173
+    Map: ayothaya
+    X: 206
+    Y: 211
     Direction: East
     Sprite: 4_M_FAIRYFREAK
     Items:

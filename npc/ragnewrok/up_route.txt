@@ -1,0 +1,252 @@
+//===== rAthena Script =======================================
+//= Leveling Route - Obi-Guide Kenobi
+//============================================================
+
+prontera,149,188,5	script	Obi-Guide Kenobi	4_M_OLDFRIAR,{
+	function F_Warp;
+
+MainMenu:
+	mes "[Obi-Guide Kenobi]";
+	mes "Greetings, young Padawan.";
+	mes "Choose your leveling destination and follow the EXP Force.";
+	next;
+
+	switch(select(
+		"Lv. 1 ~ 40",
+		"Lv. 40 ~ 60",
+		"Lv. 60 ~ 100",
+		"Lv. 100 ~ 130",
+		"Lv. 130 ~ 160",
+		"Lv. 160 ~ 180",
+		"Lv. 180 ~ 200",
+		"Lv. 200 ~ 240",
+		"Lv. 240 ~ 250",
+		"Lv. 250 ~ 260",
+		"Lv. 260 ~ 275",
+		"Leave"
+	)) {
+
+	case 1: goto L_1_40;
+	case 2: goto L_40_60;
+	case 3: goto L_60_100;
+	case 4: goto L_100_130;
+	case 5: goto L_130_160;
+	case 6: goto L_160_180;
+	case 7: goto L_180_200;
+	case 8: goto L_200_240;
+	case 9: goto L_240_250;
+	case 10: goto L_250_260;
+	case 11: goto L_260_275;
+	default:
+		mes "[Obi-Guide Kenobi]";
+		mes "May the EXP be with you.";
+		close;
+	}
+
+//------------------------------------------------------------
+// LV. 1 ~ 40
+//------------------------------------------------------------
+L_1_40:
+	mes "[Obi-Guide Kenobi]";
+	mes "For adventurers beginning their training.";
+	next;
+	switch(select(
+		"Payon Forest",
+		"Payon Dungeon",
+		"Ant Hell",
+		"Back"
+	)){
+	case 1: F_Warp("pay_fild01",0,0);
+	case 2: F_Warp("pay_dun00",0,0);
+	case 3: F_Warp("anthell01",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 40 ~ 60
+//------------------------------------------------------------
+L_40_60:
+	mes "[Obi-Guide Kenobi]";
+	mes "Continue strengthening your abilities.";
+	next;
+	switch(select(
+		"Orc Village",
+		"Sograt Desert",
+		"Back"
+	)){
+	case 1: F_Warp("gef_fild10",0,0);
+	case 2: F_Warp("moc_fild16",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 60 ~ 100
+//------------------------------------------------------------
+L_60_100:
+	mes "[Obi-Guide Kenobi]";
+	mes "Your journey advances.";
+	next;
+	switch(select(
+		"Geffen Dungeon",
+		"Clock Tower",
+		"Magma Dungeon",
+		"Ice Dungeon",
+		"Back"
+	)){
+	case 1: F_Warp("gef_dun02",0,0);
+	case 2: F_Warp("c_tower1",0,0);
+	case 3: F_Warp("mag_dun01",0,0);
+	case 4: F_Warp("ice_dun02",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 100 ~ 130
+//------------------------------------------------------------
+L_100_130:
+	mes "[Obi-Guide Kenobi]";
+	mes "A Knight’s path grows more challenging.";
+	next;
+	switch(select(
+		"Rachel Sanctuary",
+		"Juperos",
+		"Veins Field",
+		"Back"
+	)){
+	case 1: F_Warp("ra_san01",0,0);
+	case 2: F_Warp("juperos_01",0,0);
+	case 3: F_Warp("ve_fild03",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 130 ~ 160
+//------------------------------------------------------------
+L_130_160:
+	mes "[Obi-Guide Kenobi]";
+	mes "Stranger places await your training.";
+	next;
+	switch(select(
+		"Large Meditatio Bath",
+		"Illusion of Underwater",
+		"Back"
+	)){
+	case 1: F_Warp("ba_bath",0,0);
+	case 2: F_Warp("iz_d04_i",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 160 ~ 180
+//------------------------------------------------------------
+L_160_180:
+	mes "[Obi-Guide Kenobi]";
+	mes "Only those attuned to the Force should enter.";
+	next;
+	switch(select(
+		"Twisted Labyrinth Forest",
+		"Rachel Oz Gorge",
+		"Illusion of Underwater 2F",
+		"Back"
+	)){
+	case 1: F_Warp("prt_mz03_i",0,0);
+	case 2: F_Warp("ra_fild10",32,21);
+	case 3: F_Warp("iz_d05_i",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 180 ~ 200
+//------------------------------------------------------------
+L_180_200:
+	mes "[Obi-Guide Kenobi]";
+	mes "A place blessed by old gods.";
+	next;
+	switch(select(
+		"Ancient Odin's Temple",
+		"Back"
+	)){
+	case 1: F_Warp("odin_past",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 200 ~ 240
+//------------------------------------------------------------
+L_200_240:
+	mes "[Obi-Guide Kenobi]";
+	mes "Darker trials await here.";
+	next;
+	switch(select(
+		"Abandoned Lab Amicitia",
+		"Nifflheim Dungeon Banquet Hall of the Dead",
+		"Back"
+	)){
+	case 1: F_Warp("amicitia2",0,0);
+	case 2: F_Warp("nif_dun01",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 240 ~ 250
+//------------------------------------------------------------
+L_240_250:
+	mes "[Obi-Guide Kenobi]";
+	mes "A strange basement of the Clock Tower.";
+	next;
+	switch(select(
+		"Clock Tower Unknown Basement",
+		"Back"
+	)){
+	case 1: F_Warp("clock_01",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 250 ~ 260
+//------------------------------------------------------------
+L_250_260:
+	mes "[Obi-Guide Kenobi]";
+	mes "Only seasoned Knights enter here.";
+	next;
+	switch(select(
+		"Mjolnir Underground Caverns",
+		"Power Twisted Plains",
+		"Back"
+	)){
+	case 1: F_Warp("mjo_wst01",0,0);
+	case 2: F_Warp("ra_pol01",0,0);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// LV. 260 ~ 275
+//------------------------------------------------------------
+L_260_275:
+	mes "[Obi-Guide Kenobi]";
+	mes "Your final trials await.";
+	next;
+	switch(select(
+		"Niflheim Pumpkin Farm",
+		"Ancient Temple Akhet",
+		"Back"
+	)){
+	case 1: F_Warp("nif_fild03",0,0);
+	case 2: F_Warp("moc_akhet",280,87);
+	default: goto MainMenu;
+	}
+
+//------------------------------------------------------------
+// Warp Function
+//------------------------------------------------------------
+function F_Warp {
+	mes "[Obi-Guide Kenobi]";
+	mes "May the EXP be with you.";
+	close2;
+	warp getarg(0), getarg(1), getarg(2);
+	end;
+}
+
+OnInit:
+	end;
+}

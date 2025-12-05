@@ -67,4 +67,5 @@ Footer:
   - Path: npc/ragnewrok/hats_top.yml
   - Path: npc/ragnewrok/hats_middle.yml
   - Path: npc/ragnewrok/hats_bottom.yml
+  - Path: npc/ragnewrok/pets.yml
 

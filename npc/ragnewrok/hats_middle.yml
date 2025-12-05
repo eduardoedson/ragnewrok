@@ -48,9 +48,9 @@ Header:
 
 Body:
   - Name: Hats Middle
-    Map: prontera
-    X: 142
-    Y: 173
+    Map: ayothaya
+    X: 204
+    Y: 211
     Direction: East
     Sprite: 4_M_MELODY
     Items:

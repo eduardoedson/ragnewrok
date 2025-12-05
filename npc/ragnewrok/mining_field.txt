@@ -1,57 +1,112 @@
-prontera,149,176,5	script	Mining Field	4_M_EINMINER,{
+//============================================================
+// Mining Field Entrance & Coastal Mining Passage
+//============================================================
+
+prontera,147,175,5	script	Mining Field	4_M_EINMINER,{
 	mes "[Mining Field]";
-	mes "This is the entrance to the ^FF0000Mining Field^000000.";
+	mes "Ah, welcome, traveler.";
+	mes "Our peaceful fishing village hides more danger than you might expect.";
+	mes "Beyond this point lies the ^FFCC00Coastal Mining Passage^000000, an abandoned tunnel system used long ago by locals searching for rare minerals carried in by the tides.";
 	next;
 
 	mes "[Mining Field]";
+	mes "But don't be fooled by its quiet entrance...";
+	mes "Every creature inside the mine is unnaturally strong - each of them possesses around ^FF0000120,000,000 HP^000000.";
+	mes "Only well-prepared adventurers dare to enter.";
 	next;
 
-	switch(select("Enter:Information")) {
-		//--------------------------------------
-		// Enter
-		//--------------------------------------
+	switch(select("Enter the Mine:About the Mine")) {
+		//============================================================
+		// Enter the Mine
+		//============================================================
 		case 1:
 			mes "[Mining Field]";
-			mes "Good luck!";
+			mes "Heading in? Then hear this last warning:";
+			mes "^FF0000PvP is enabled inside the mine.^000000";
+			mes "Sometimes the monsters aren't the only danger lurking in the tunnels.";
+			mes "Good luck, brave one - and may the earth reward your courage.";
 			close2;
-			warp "bl_depth2", 0, 0;
+			warp "jor_albe", 0, 0;
 			end;
 
-		//--------------------------------------
-		// Information
-		//--------------------------------------
+		//============================================================
+		// About the Mine
+		//============================================================
 		case 2:
 			mes "[Mining Field]";
-			mes "Good luck!";
+			mes "The Coastal Mining Passage contains various rare refining materials.";
+			mes "Here are the actual refining materials you may obtain inside the mine:";
+			next;
+
+			mes "[Mining Field]";
+			mes "^00FF00Common:^000000";
+			mes "- Enriched Oridecon (2.50%)";
+			mes "- Enriched Elunium (2.50%)";
+			next;
+
+			mes "[Mining Field]";
+			mes "^00AAFFUncommon:^000000";
+			mes "- HD Oridecon (1.50%)";
+			mes "- HD Elunium (1.50%)";
+			mes "- Enriched Ethernium (1.50%)";
+			mes "- Enriched Etherdeocon (1.50%)";
+			next;
+
+			mes "[Mining Field]";
+			mes "^FF9900Rare:^000000";
+			mes "- HD Ethernium (1.00%)";
+			mes "- HD Etherdeocon (1.00%)";
+			mes "- HD Carnium (0.50%)";
+			mes "- HD Etel Carnium (0.50%)";
+			mes "- HD Bradium (0.50%)";
+			mes "- HD Etel Bradium (0.50%)";
+			next;
+			
+			mes "[Mining Field]";
+			mes "^FF0000Very Rare:^000000";
+			mes "- Etel Carnium (0.05%)";
+			mes "- Etel Bradium (0.05%)";
+			mes "- Blacksmith's Blessing (0.05%)";
+			next;
+
+			mes "[Mining Field]";
+			mes "Blacksmiths across the land use these ores to refine weapons and armor far beyond normal limits.";
+			mes "But remember:";
+			mes "\"Where the treasures are richest, the dangers grow deepest.\"";
+			mes "And with PvP enabled, even other adventurers may stand between you and your fortune.";
 			close2;
 			end;
 	}
 	end;
 }
 
+//============================================================
 // Warp Portals
 //============================================================
-bl_depth2,141,137,0	warp	leave	1,1,prontera,155,180
+jor_albe,202,197,0	warp	leave	1,1,prontera,155,180
 
-//----------------------------------------------------------------------------
+//============================================================
 // Monsters
-//----------------------------------------------------------------------------
-bl_depth2, 0, 0	monster	Abyssman	31076, 20, 1000
-bl_depth2, 0, 0	monster	Purple Mineral	31077, 20, 1000
-bl_depth2, 0, 0	monster	White Mineral	31078, 20, 1000
-bl_depth2, 0, 0	monster	Red Mineral	31079, 20, 1000
-bl_depth2, 0, 0	monster	Green Mineral	31080, 20, 1000
+// map,x,y,dir	monster	"name"	ID,amount,delay_ms
+//============================================================
 
-//----------------------------------------------------------------------------
-// Mapflag
-//----------------------------------------------------------------------------
-bl_depth2	mapflag	nosave	SavePoint
-bl_depth2	mapflag	nowarp
-bl_depth2	mapflag	nowarpto
-bl_depth2	mapflag	nomemo
-bl_depth2	mapflag	nopenalty
-bl_depth2	mapflag	nobranch
-bl_depth2	mapflag	noicewall
-bl_depth2	mapflag	norenewalexppenalty
-bl_depth2	mapflag	norenewaldroppenalty
-bl_depth2	mapflag	pvp
+jor_albe,0,0,0	monster	"Abyssman"	31076,20,1000
+jor_albe,0,0,0	monster	"Purple Mineral"	31077,20,1000
+jor_albe,0,0,0	monster	"White Mineral"	31078,20,1000
+jor_albe,0,0,0	monster	"Red Mineral"	31079,20,1000
+jor_albe,0,0,0	monster	"Green Mineral"	31080,20,1000
+
+//============================================================
+// Mapflags
+//============================================================
+
+jor_albe	mapflag	nosave	SavePoint
+jor_albe	mapflag	nowarp
+jor_albe	mapflag	nowarpto
+jor_albe	mapflag	nomemo
+jor_albe	mapflag	nopenalty
+jor_albe	mapflag	nobranch
+jor_albe	mapflag	noicewall
+jor_albe	mapflag	norenewalexppenalty
+jor_albe	mapflag	norenewaldroppenalty
+jor_albe	mapflag	pvp

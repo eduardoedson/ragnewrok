@@ -109282,7 +109282,7 @@ Body:
     AttackMotion: 1152
     ClientAttackMotion: 384
     DamageMotion: 720
-    Ai: 04
+    Ai: 21
     Drops:
       - Item: Blaze_Stone
         Rate: 2300
@@ -115065,7 +115065,7 @@ Body:
 #    AegisName: MD_PRI_RIGEL_ACS
   - Id: 22177
     AegisName: MD_PRI_DRAGON_1
-    Name: MD_PRI_DRAGON_1
+    Name: Pinkstrasza
   - Id: 22178
     AegisName: MD_PRI_DRAGON_2
     Name: MD_PRI_DRAGON_2

@@ -11,7 +11,7 @@
 This file describes the usage of in-game commands and assumes that
 '/conf/atcommand_athena.conf' has the following:
 	atcommand_symbol : "@"
-	charcommand_symbol: "#"
+	charcommand_symbol: "!"
 
 Some commands cannot be used from console or script command to prevent map-server crashed.
 See atcommand.cpp::atcommand_basecommands for restricted commands. Please tell us if any

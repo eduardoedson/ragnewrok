@@ -1,0 +1,80 @@
+//============================================================
+//= Ragnewrok Special Room - Entrance NPC
+//============================================================
+
+prontera,149,182,5	script	Special Room Gatekeeper	4_F_DANGDANG1,{
+
+	mes "[Special Room Gatekeeper]";
+	mes "Halt, traveler.";
+	mes "You stand before the entrance to the ^FFCC00Ragnewrok Special Room^000000.";
+	mes "A place where ordinary rules no longer apply.";
+	next;
+
+	while (true) {
+		switch(select("I want to enter.:What is this Special Room?:Just passing by.")) {
+			//============================================================
+			// Option 1 → Enter
+			//============================================================
+			case 1:
+				mes "[Special Room Gatekeeper]";
+				mes "Before I let you in, I must ask:";
+				mes "Are you truly prepared for the unknown?";
+				mes "Inside, challenges and mysteries await those who dare.";
+				next;
+
+				switch(select("I'm ready.:Maybe this is too dangerous...")) {
+
+					// Player ready
+					case 1:
+						mes "[Special Room Gatekeeper]";
+						mes "Excellent. Courage is the first key to unlocking the secrets within.";
+						mes "Remember: ^FF0000once you step inside, there is no easy return^000000.";
+						mes "What you gain or lose will be the result of your own decision.";
+						next;
+						mes "[Special Room Gatekeeper]";
+						mes "Very well, I shall open the path.";
+						close2;
+						warp "ayothaya",207,204;
+						end;
+
+					// Player unsure
+					case 2:
+						mes "[Special Room Gatekeeper]";
+						mes "There is wisdom in hesitation.";
+						mes "This place is not meant for the faint-hearted.";
+						mes "Return when your spirit is resolute.";
+						close;
+				}
+				end;
+
+
+			//============================================================
+			// Option 2 → What is the Special Room?
+			//============================================================
+			case 2:
+				mes "[Special Room Gatekeeper]";
+				mes "The Ragnewrok Special Room is a sanctuary of secrets.";
+				mes "Time flows differently inside and rare rewards await those brave enough to explore it.";
+				next;
+				mes "[Special Room Gatekeeper]";
+				mes "Some enter seeking glory, others fortune.";
+				mes "And some return changed forever.";
+				next;
+				mes "[Special Room Gatekeeper]";
+				mes "If you wish to step beyond this veil, decide carefully.";
+				break; // return to main menu
+
+
+			//============================================================
+			// Option 3 → Just passing by
+			//============================================================
+			case 3:
+				mes "[Special Room Gatekeeper]";
+				mes "Very well.";
+				mes "But remember, true stories are not written by those who stand still.";
+				mes "When you are ready, I shall still be here.";
+				close;
+		}
+	}
+	end;
+}

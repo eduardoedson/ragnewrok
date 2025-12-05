@@ -8611,12 +8611,20 @@ Body:
       percentheal 60,60;
   - Id: 12336
     AegisName: Baked_Mushroom
-    Name: Grilled Mushroom
+    Name: Baked Mushroom
     Type: Healing
-    Buy: 500
-    Weight: 300
+    Weight: 0
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Script: |
-      percentheal 30,30;
+      percentheal 0,20;
   - Id: 12337
     AegisName: Grilled_Sausage
     Name: Grilled Sausages
@@ -21277,6 +21285,7 @@ Body:
       NoSell: true
       NoCart: true
       NoGuildStorage: true
+      NoStorage: true
       NoMail: true
       NoAuction: true
     Script: |
@@ -37349,8 +37358,9 @@ Body:
       sc_start SC_ULTIMATECOOK,1800000,10;
   - Id: 14908
     AegisName: Korea_Rice_Cake_B
-    Name: "[Not For Sale] Korean Rice Cake"
+    Name: "Rice Cake"
     Type: Healing
+    Weight: 0
     Trade:
       NoDrop: true
       NoTrade: true

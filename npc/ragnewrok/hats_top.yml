@@ -48,9 +48,9 @@ Header:
 
 Body:
   - Name: Hats Top
-    Map: prontera
-    X: 140
-    Y: 173
+    Map: ayothaya
+    X: 202
+    Y: 211
     Direction: North
     Sprite: 4_BLACKDRAGON
     Items:

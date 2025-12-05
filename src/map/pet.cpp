@@ -1791,7 +1791,7 @@ static int32 pet_ai_sub_hard(pet_data *pd, map_session_data *sd, t_tick tick)
 		if(pd->status.speed == 0)
 			pd->status.speed = 1;
 
-		if (!unit_walktobl(pd, sd, 3, 0))
+		if (!unit_walktobl(pd, sd, 6, 0))
 			pet_randomwalk(pd,tick);
 
 		return 0;
@@ -1822,10 +1822,10 @@ static int32 pet_ai_sub_hard(pet_data *pd, map_session_data *sd, t_tick tick)
 	}
 
 	if (!target) { // Just walk around.
-		if (check_distance_bl(sd, pd, 3))
+		if (check_distance_bl(sd, pd, 6))
 			return 0; // Already next to master.
 
-		if(pd->ud.walktimer != INVALID_TIMER && check_distance_blxy(sd, pd->ud.to_x,pd->ud.to_y, 3))
+		if(pd->ud.walktimer != INVALID_TIMER && check_distance_blxy(sd, pd->ud.to_x,pd->ud.to_y, 6))
 			return 0; // Already walking to him
 
 		unit_calc_pos(pd, sd->x, sd->y, sd->ud.dir);
