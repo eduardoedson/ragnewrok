@@ -59,7 +59,6 @@ Body:
       noks: true
       noask: true
       autoloot: true
-      alootid: true
       breakguild: true
     Permissions:
       # without this basic permissions regular players could not trade or party
