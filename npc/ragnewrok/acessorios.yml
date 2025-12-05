@@ -46,27 +46,23 @@ Header:
   Type: BARTER_DB
   Version: 2
 
-Footer:
-  Imports:
-  - Path: npc/re/merchants/barters/cashmall.yml
-  - Path: npc/re/merchants/barters/enchan_illusion_dungeons.yml
-  - Path: npc/re/merchants/barters/enchantgrade.yml
-  - Path: npc/re/merchants/barters/Extended_Ammunition.yml
-  - Path: npc/re/merchants/barters/garden_of_time.yml
-  - Path: npc/re/merchants/barters/Gemstone_Bagger.yml
-  - Path: npc/re/merchants/barters/mysterious_cookie_shop.yml
-  - Path: npc/re/merchants/barters/quests_16_1.yml
-  - Path: npc/re/merchants/barters/quests_16_2.yml
-  - Path: npc/re/merchants/barters/quests_17_1.yml
-  - Path: npc/re/merchants/barters/quests_17_2.yml
-  - Path: npc/re/merchants/barters/quests_18.yml
-  - Path: npc/re/merchants/barters/quests_exp_175.yml
-  - Path: npc/re/merchants/barters/refine.yml
-  - Path: npc/re/merchants/barters/rgsr_in.yml
-  - Path: npc/re/merchants/barters/Pet_Groomer.yml
-  - Path: npc/ragnewrok/hats_top.yml
-  - Path: npc/ragnewrok/hats_middle.yml
-  - Path: npc/ragnewrok/hats_bottom.yml
-  - Path: npc/ragnewrok/pets.yml
-  - Path: npc/ragnewrok/acessorios.yml
-
+Body:
+  - Name: Accessories
+    Map: ayothaya
+    X: 208
+    Y: 211
+    Direction: East
+    Sprite: 4_M_COSTELL
+    Items:
+      - Index: 1
+        Item: Mini_Fan_Box
+        RequiredItems:
+          - Index: 0
+            Item: Ragnewrok_Coin
+            Amount: 250
+          - Index: 1
+            Item: Wind_Of_Verdure 
+            Amount: 50
+          - Index: 2
+            Item: Rough_Wind 
+            Amount: 50

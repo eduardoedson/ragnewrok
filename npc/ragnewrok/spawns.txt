@@ -198,7 +198,7 @@ uknw_ruin,0,0	monster	Shadow Jailer	22464,15,5000
 uknw_ruin2,0,0	monster	Shadow Jailer	22464,15,5000
 uknw_ruin,0,0	monster	Tulip	22465,60,5000
 uknw_ruin,0,0	monster	Calendula	22466,60,5000
-uknw_ruin,0,0	monster	Scabiosa	22467,35,5000
+uknw_ruin,0,0	monster	Scaa	22467,35,5000
 uknw_ruin2,0,0	monster	Lobelia	22468,35,5000
 uknw_ruin2,0,0	monster	Myosotis	22469,60,5000
 uknw_ruin2,0,0	monster	Anemone	22470,60,5000
@@ -238,3 +238,115 @@ ch1_gfn03,0,0	monster	Abyss Knight	22489,3,5000
 mu_fild01,0,0	monster	Bulgasari	22494,1,5000
 uknw_ruin2,0,0	monster	Glutto	22495,1,5000
 jor_back6,0,0	monster	Armoerdcopo	23060,55,5000
+
+jor_base,0,0	monster	Yorker	22322,230,5000
+jor_base,0,0	monster	Seawind	22313,50,5000
+jor_raise1,0,0	monster	Seawind	22313,70,5000
+jor_raise2,0,0	monster	Seawind	22313,100,5000
+jor_base,0,0	monster	Yorker	22321,230,5000
+jor_base,0,0	monster	Yoster	22326,30,5000
+jor_tmple1,0,0	monster	Yoster	22326,70,5000
+jor_base,0,0	monster	Yoster	22324,30,5000
+jor_tmple1,0,0	monster	Yoster	22324,70,5000
+jor_raise1,0,0	monster	Velelling	22315,70,5000
+jor_base,0,0	monster	Seawind	22313,50,5000
+jor_raise1,0,0	monster	Seawind	22313,70,5000
+jor_raise2,0,0	monster	Seawind	22313,100,5000
+jor_raise1,0,0	monster	Letterster	22316,70,5000
+jor_raise1,0,0	monster	Scalleg	22314,70,5000
+jor_raise1,0,0	monster	Rockstriker	22317,70,5000
+jor_raise1,0,0	monster	Yoster	22323,30,5000
+jor_tmple1,0,0	monster	Yoster	22323,70,5000
+jor_raise1,0,0	monster	Yoster	22327,30,5000
+jor_tmple1,0,0	monster	Yoster	22327,70,5000
+jor_raise1,0,0	monster	Yoster	22325,30,5000
+jor_tmple1,0,0	monster	Yoster	22325,70,5000
+jor_raise2,0,0	monster	Icehorn	22362,1,21600000
+jor_raise2,0,0	monster	Iceseahorse	22318,130,5000
+jor_raise2,0,0	monster	Cliolima	22320,100,5000
+jor_raise2,0,0	monster	Skipskipper	22319,130,5000
+jor_base,0,0	monster	Seawind	22313,50,5000
+jor_raise1,0,0	monster	Seawind	22313,70,5000
+jor_raise2,0,0	monster	Seawind	22313,100,5000
+jor_tmple1,0,0	monster	Yortus	22363,1,21600000
+jor_tmple1,0,0	monster	Yordos	22357,20,5000
+jor_tmple2,0,0	monster	Yordos	22357,90,5000
+jor_tmple1,0,0	monster	Yordos	22356,20,5000
+jor_tmple2,0,0	monster	Yordos	22356,90,5000
+jor_tmple1,0,0	monster	Yordos	22355,20,5000
+jor_tmple2,0,0	monster	Yordos	22355,90,5000
+jor_tmple1,0,0	monster	Yormi	22354,75,5000
+jor_raise1,0,0	monster	Yoster	22325,30,5000
+jor_tmple1,0,0	monster	Yoster	22325,70,5000
+jor_base,0,0	monster	Yoster	22324,30,5000
+jor_tmple1,0,0	monster	Yoster	22324,70,5000
+jor_tmple1,0,0	monster	Yormi	22353,75,5000
+jor_raise1,0,0	monster	Yoster	22327,30,5000
+jor_tmple1,0,0	monster	Yoster	22327,70,5000
+jor_base,0,0	monster	Yoster	22326,30,5000
+jor_tmple1,0,0	monster	Yoster	22326,70,5000
+jor_raise1,0,0	monster	Yoster	22323,30,5000
+jor_tmple1,0,0	monster	Yoster	22323,70,5000
+jor_tmple2,0,0	monster	Yortus	22364,1,21600000
+jor_tmple2,0,0	monster	Yortus	22361,70,5000
+jor_tmple2,0,0	monster	Yortus	22360,70,5000
+jor_tmple2,0,0	monster	Yoscopus	22359,80,5000
+jor_tmple2,0,0	monster	Yoscopus	22358,80,5000
+jor_tmple1,0,0	monster	Yordos	22357,20,5000
+jor_tmple2,0,0	monster	Yordos	22357,90,5000
+jor_tmple1,0,0	monster	Yordos	22356,20,5000
+jor_tmple2,0,0	monster	Yordos	22356,90,5000
+jor_tmple1,0,0	monster	Yordos	22355,20,5000
+jor_tmple2,0,0	monster	Yordos	22355,90,5000
+bl_depth1,0,0	monster	Pom Spider	22153,25,5000
+bl_depth1,0,0	monster	Holy Skogul	22149,25,5000
+bl_depth1,0,0	monster	Fire Frilldora	22147,25,5000
+bl_depth1,0,0	monster	Sting	22145,25,5000
+bl_depth1,0,0	monster	Wood Goblin	22155,25,5000
+bl_depth1,0,0	monster	Pinguicula D	22152,25,5000
+bl_depth1,0,0	monster	Skel Soldier	22151,25,5000
+bl_depth1,0,0	monster	Dragon Tail	22142,25,5000
+bl_depth1,0,0	monster	Skel Archer	22141,25,5000
+bl_depth1,0,0	monster	Pray Giver	22154,25,5000
+bl_depth1,0,0	monster	Kapha	22150,25,5000
+bl_depth1,0,0	monster	Holy Frus	22148,25,5000
+bl_depth1,0,0	monster	Little Fatum	22144,25,5000
+bl_depth1,0,0	monster	Anolian	22140,25,5000
+bl_depth1,0,0	monster	Empathizer	22146,25,5000
+bl_depth1,0,0	monster	Lava Toad	22143,25,5000
+bl_depth2,0,0	monster	Moskillo	22261,30,5000
+bl_depth2,0,0	monster	Salamander	22260,30,5000
+bl_depth2,0,0	monster	Morocc	22259,30,5000
+bl_depth2,0,0	monster	Acidus	22258,30,5000
+bl_depth2,0,0	monster	Flame Ghost	22257,30,5000
+bl_depth2,0,0	monster	Ice Gargoyle	22256,30,5000
+bl_depth2,0,0	monster	Dollocaris	22255,30,5000
+bl_depth2,0,0	monster	Ancient Tree	22254,30,5000
+bl_depth2,0,0	monster	Naga	22253,30,5000
+bl_depth2,0,0	monster	Duneyrr	22252,30,5000
+jor_back4,0,0	monster	Rabbit Iceslug	21969,50,5000
+jor_twice,0,0	monster	Rabbit Iceslug	21969,60,5000
+jor_back4,0,0	monster	Angel Iceslug	21983,50,5000
+jor_twice,0,0	monster	Angel Iceslug	21983,60,5000
+jor_back4,0,0	monster	Fake Iwin	21976,30,5000
+jor_back4,0,0	monster	Fake Iwin	21977,30,5000
+jor_back4,0,0	monster	Fake Iwin	21978,20,5000
+jor_back6,0,0	monster	Fake Iwin	21978,20,5000
+jor_back4,0,0	monster	Snow Angel	21996,1,21600000
+jor_back5,0,0	monster	Eggcopo	21968,40,5000
+jor_back5,0,0	monster	Fake Iwin Sy	21975,20,5000
+jor_back5,0,0	monster	Fake Iwin Sn	21974,20,5000
+jor_back5,0,0	monster	Copo	21965,40,5000
+jor_back5,0,0	monster	Icewind Egg	21984,10,5000
+clock_01,0,0	monster	Goblin King	20118,1,5000
+mjo_wst01,0,0	monster	Renire	21955,1,5000
+bl_soul,0,0	monster	Gloomundernight	21943,1,21600000
+bl_soul,0,0	monster	Odium	21942,35,5000
+bl_soul,0,0	monster	Gajomart	21941,35,5000
+bl_soul,0,0	monster	The Paper	21940,25,5000
+bl_soul,0,0	monster	Noxious	21939,10,5000
+bl_soul,0,0	monster	Marionette	21938,35,5000
+bl_soul,0,0	monster	Whisper	21937,35,5000
+bl_soul,0,0	monster	Nightmare	21936,35,5000
+ra_pol01,0,0	monster	Gaia Pol	21950,1,5000
+nif_fild03,0,0	monster	Jackonette	22389,105,5000

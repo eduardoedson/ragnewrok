@@ -51,8 +51,8 @@ Body:
     Map: ayothaya
     X: 202
     Y: 211
-    Direction: North
-    Sprite: 4_BLACKDRAGON
+    Direction: East
+    Sprite: 4_EXJOB_MASTER_J
     Items:
       - Index: 0
         Item: Vanargand_Helm
